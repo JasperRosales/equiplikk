@@ -1,0 +1,71 @@
+package src.controller;
+
+import src.model.Notification;
+import src.service.NotificationService;
+
+import java.util.List;
+
+public class NotificationController {
+
+    private final NotificationService notificationService;
+
+    public NotificationController(NotificationService notificationService) {
+        this.notificationService = notificationService;
+    }
+
+    public List<Notification> findForUser(long userId) throws Exception {
+        return notificationService.findForUser(userId);
+    }
+
+    public void markRead(long userId, long notificationId) throws Exception {
+        notificationService.markRead(userId, notificationId);
+    }
+
+    public void markAllRead(long userId) throws Exception {
+        notificationService.markAllRead(userId);
+    }
+
+    public int countUnread(long userId) throws Exception {
+        return notificationService.countUnread(userId);
+    }
+
+    public long latestNotificationId(long userId) throws Exception {
+        return notificationService.latestNotificationId(userId);
+    }
+
+    public void delete(long userId, long notificationId) throws Exception {
+        notificationService.delete(userId, notificationId);
+    }
+
+    public int deleteAll(long userId) throws Exception {
+        return notificationService.deleteAll(userId);
+    }
+
+    /** Undo a single notification deletion inside the recovery window. */
+    public void restore(long userId, long notificationId) throws Exception {
+        notificationService.restore(userId, notificationId);
+    }
+
+    /** Undo a "Delete all" action for the given notification ids. */
+    public int restoreAll(long userId, java.util.Collection<Long> notificationIds)
+            throws Exception {
+        return notificationService.restoreAll(userId, notificationIds);
+    }
+
+    public String changeToken(long userId) throws Exception {
+        return notificationService.changeToken(userId);
+    }
+
+    public void runOverdueSweep() throws Exception {
+        notificationService.runOverdueSweep();
+    }
+
+    public boolean hasPendingReminderToday(long userId) throws Exception {
+        return notificationService.hasPendingReminderToday(userId);
+    }
+
+    public void createPendingReminder(long userId, int pendingCount)
+            throws Exception {
+        notificationService.createPendingReminder(userId, pendingCount);
+    }
+}

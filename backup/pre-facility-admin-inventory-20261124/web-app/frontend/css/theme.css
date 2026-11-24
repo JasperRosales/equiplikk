@@ -1,0 +1,121 @@
+/*
+ * EquipLink palette.
+ * Light mode mirrors src/ui/AppTheme.java (desktop) exactly.
+ * Dark mode is a softer, warmer "wine & mocha" scheme: lifted surfaces, clear layering between
+ * page / card / input, and a brighter rose accent so red elements stay readable instead of
+ * sinking into near-black maroon.
+ */
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600 700;
+  font-display: swap;
+}
+
+:root {
+  --primary: #660000;
+  --primary-hover: #8c1a1a;
+  --primary-pressed: #4d0000;
+  --primary-soft: #faefef;
+  /* Brand red when used as text / icon / accent on a surface (brighter in dark mode). */
+  --primary-ink: #660000;
+  --primary-rgb: 102, 0, 0;
+  --on-primary: #ffffff;
+
+  --sidebar: #660000;
+  --sidebar-text: #ffffff;
+  --sidebar-muted: #f0d7d7;
+  --sidebar-divider: #8c1a1a;
+  --sidebar-active-bg: rgba(255, 255, 255, .92);
+  --sidebar-active-ink: #660000;
+
+  --ink: #2b1a1a;
+  --muted: #6e5a5a;
+  --surface: #ffffff;
+  --surface-deep: #f8f4f4;
+  --surface-raised: #ffffff;
+  --input: #fff9f2;
+  --border: #e4d8d8;
+  --background: #ffffff;
+  --header: #ffffff;
+  --shadow-light: #ffffff;
+  --shadow-dark: #e4d8d8;
+
+  --danger: #c62828;
+  --success: #1b8f5a;
+  --warning: #c47600;
+  --danger-rgb: 198, 40, 40;
+  --success-rgb: 27, 143, 90;
+  --warning-rgb: 196, 118, 0;
+  --tint: #a35c5c;            /* desktop AppTheme.accent(): brand mixed 35% toward white */
+  --tint-rgb: 163, 92, 92;
+  --badge-alpha: .10;         /* StatusBadge fill: 26/255 in light mode */
+
+  --shadow: 0 10px 30px rgba(77, 0, 0, .08);
+  --shadow-soft: -4px -4px 12px var(--shadow-light), 5px 5px 14px var(--shadow-dark);
+  --shadow-hover: -5px -5px 15px var(--shadow-light), 7px 7px 18px var(--shadow-dark);
+  --shadow-inset: inset 3px 3px 7px var(--shadow-dark), inset -3px -3px 7px var(--shadow-light);
+  --overlay: rgba(20, 4, 4, .58);
+  --scroll-thumb: rgba(140, 26, 26, .5);
+
+  --radius: 18px;
+  --radius-sm: 14px;
+  --font: Poppins, 'Segoe UI', Arial, sans-serif;
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  /* Page, card and input are clearly stepped so cards read as cards. */
+  --background: #2a1b1d;
+  --header: #301f21;
+  --surface: #382527;
+  --surface-deep: #2f1f21;
+  --surface-raised: #422c2f;
+  --input: #2d1d1f;
+  --border: #5e4144;
+
+  --ink: #f8eeec;
+  --muted: #cfbab7;
+
+  /* Buttons: a real red, not a near-black maroon. */
+  --primary: #a8323a;
+  --primary-hover: #be424a;
+  --primary-pressed: #8c262e;
+  --primary-soft: #4d2d30;
+  --primary-ink: #ff9d9d;
+  --primary-rgb: 255, 157, 157;
+  --on-primary: #ffffff;
+
+  /* Sidebar keeps the brand wine, lifted slightly so it separates from the page. */
+  --sidebar: #5a1a1f;
+  --sidebar-text: #ffffff;
+  --sidebar-muted: #e6cfcc;
+  --sidebar-divider: #7a2c32;
+  --sidebar-active-bg: #fff3f1;
+  --sidebar-active-ink: #5a1a1f;
+
+  --shadow-light: #46302f;
+  --shadow-dark: #1d1011;
+
+  --danger: #ff7b7b;
+  --success: #4cc790;
+  --warning: #f2b04c;
+  --danger-rgb: 255, 123, 123;
+  --success-rgb: 76, 199, 144;
+  --warning-rgb: 242, 176, 76;
+  --tint: #e6908f;
+  --tint-rgb: 230, 144, 143;
+  --badge-alpha: .19;         /* StatusBadge fill: 48/255 in dark mode */
+
+  --shadow: 0 12px 30px rgba(10, 2, 3, .32);
+  --shadow-hover: -5px -5px 15px var(--shadow-light), 7px 7px 20px var(--shadow-dark);
+  --overlay: rgba(14, 5, 6, .62);
+  --scroll-thumb: rgba(255, 157, 157, .38);
+  color-scheme: dark;
+}

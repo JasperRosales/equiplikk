@@ -1,0 +1,19 @@
+# WiX must be on PATH (using the binaries downloaded earlier)
+$wix = Join-Path $env:LOCALAPPDATA 'Temp\opencode\wix314'
+$env:PATH = "$wix;$env:PATH"
+
+jpackage --type exe `
+  --name EquipLink `
+  --app-version 1.0.0 `
+  --vendor EquipLink `
+  --description "Campus equipment borrowing system" `
+  --input build\release\input `
+  --main-jar equiplink.jar `
+  --main-class src.Main `
+  --icon src\assets\equiplink.ico `
+  --win-per-user-install `
+  --win-dir-chooser `
+  --win-menu --win-menu-group EquipLink `
+  --win-shortcut `
+  --win-upgrade-uuid ae55204b-945a-4508-8ae8-111fb443d77b `
+  --dest build\release\exe

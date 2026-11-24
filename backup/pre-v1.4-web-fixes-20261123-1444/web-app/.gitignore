@@ -1,0 +1,3 @@
+backend/build/
+config/server.pid
+*.log

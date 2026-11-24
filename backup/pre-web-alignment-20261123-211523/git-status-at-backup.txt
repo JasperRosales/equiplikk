@@ -1,0 +1,116 @@
+﻿ M .gitignore
+ M schema.md
+ M src/Main.java
+ M src/assets/logo_sheet.png
+ D src/assets/received_1676750560533488-removebg-preview.png
+ M src/controller/AuthController.java
+ M src/controller/BorrowRequestController.java
+ M src/controller/EquipmentController.java
+ M src/controller/NotificationController.java
+ M src/database/Database.java
+ M src/database/DatabaseInitializerPart1.java
+ M src/database/DatabaseSchema.java
+ M src/layout/MainLayout.java
+ M src/layout/MainLayoutPart1.java
+ M src/layout/MainLayoutPart2.java
+ M src/model/BorrowRequest.java
+ M src/model/BorrowRequestForm.java
+ M src/model/EquipmentRequestItem.java
+ M src/model/Notification.java
+ M src/model/RequestStatus.java
+ M src/model/User.java
+ M src/service/AuthServicePart1.java
+ M src/service/AuthServicePart2.java
+ M src/service/BorrowRequestService.java
+ M src/service/BorrowRequestServicePart1.java
+ M src/service/BorrowRequestServicePart2.java
+ M src/service/BorrowRequestServicePart3.java
+ M src/service/BorrowRequestServicePart4.java
+ M src/service/BorrowRequestServicePart5.java
+ M src/service/BorrowRequestServicePart6.java
+ M src/service/BorrowRequestServicePart7.java
+ M src/service/EquipmentService.java
+ M src/service/NotificationService.java
+ M src/service/NotificationServicePart1.java
+ M src/service/NotificationServicePart2.java
+ M src/ui/AppTheme.java
+ M src/ui/BorrowingHistoryPanel.java
+ M src/ui/BrandLogo.java
+ M src/ui/DashboardPanelPart1.java
+ M src/ui/EquipmentInventoryPanel.java
+ M src/ui/EquipmentInventoryPanelPart2.java
+ M src/ui/EquipmentRequestPanel.java
+ M src/ui/EquipmentRequestPanelPart1.java
+ M src/ui/EquipmentRequestPanelPart2.java
+ M src/ui/ForgotPasswordDialog.java
+ M src/ui/ForgotPasswordDialogPart1.java
+ M src/ui/ForgotPasswordDialogPart2.java
+ M src/ui/ForgotPasswordDialogPart3.java
+ M src/ui/ItemInspectionDialog.java
+ M src/ui/LoginFrame.java
+ M src/ui/LoginFramePart1.java
+ M src/ui/MyRequestsPanelPart1.java
+ M src/ui/NotificationDetailsDialog.java
+ M src/ui/NotificationsPanel.java
+ M src/ui/NotificationsPanelPart1.java
+ M src/ui/NotificationsPanelPart2.java
+ M src/ui/PasswordChangeDialog.java
+ M src/ui/PasswordChangeDialogPart1.java
+ M src/ui/PasswordChangeDialogPart2.java
+ M src/ui/PasswordResetRequestsPanel.java
+ M src/ui/RegisterFrame.java
+ M src/ui/RequestDetailsDialog.java
+ M src/ui/RequestDetailsDialogPart1.java
+ M src/ui/RequestQueuePanel.java
+ M src/ui/RequestQueuePanelPart1.java
+ M src/ui/RequestQueuePanelPart2.java
+ M src/ui/RequestQueuePanelPart3.java
+ M src/ui/RequestQueuePanelPart4.java
+ M src/ui/RoomManagementPanel.java
+ M src/ui/SettingsPanel.java
+ M src/ui/Soft3DButton.java
+ M src/ui/SoftPasswordField.java
+ M src/ui/SoftTextField.java
+ M src/ui/SplashWindow.java
+ M src/ui/UiSupport.java
+ M src/ui/UserManagementPanel.java
+ M src/ui/components/AuthBrandPanel.java
+ M src/ui/components/Avatar.java
+ M src/ui/components/DashboardCard.java
+ M src/ui/components/DateFilter.java
+ M src/ui/components/LogoAnimationPanelPart1.java
+ M src/ui/components/LucideIcon.java
+ M src/ui/components/NavigationButton.java
+ M src/ui/components/PrimaryButton.java
+?? backup/
+?? build-exe.bat
+?? build.txt
+?? replay_pid34228.log
+?? src.zip
+?? src/database/DatabaseConfig.java
+?? src/model/EquipmentAvailabilitySummary.java
+?? src/model/EquipmentUsageRecord.java
+?? src/model/RequestHistoryEvent.java
+?? src/model/RoomConflict.java
+?? src/service/BackgroundNotificationService.java
+?? src/service/SessionService.java
+?? src/ui/AccountDetailsPanel.java
+?? src/ui/BackgroundTray.java
+?? src/ui/DailySchedulePanel.java
+?? src/ui/DatabaseConfigDialog.java
+?? src/ui/EquipmentUsageDialog.java
+?? src/ui/ProfileEditor.java
+?? src/ui/ProfilePanel.java
+?? src/ui/components/ProfileMenu.java
+?? src/util/AccountDeactivatedException.java
+?? src/util/AccountDeletedException.java
+?? src/util/NotificationSound.java
+?? src/util/ProfilePicture.java
+?? src/util/SessionStore.java
+?? src/util/SingleInstance.java
+?? src/util/UsernameAlreadyExistsException.java
+?? src/util/UsernameConflictException.java
+?? web-app-backup/
+?? web-app-backup2/
+?? web-app.zip
+?? web-app/

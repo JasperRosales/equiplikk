@@ -1,0 +1,57 @@
+/* EquipLink palette mirrored from src/ui/AppTheme.java */
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600 700;
+  font-display: swap;
+}
+
+:root {
+  --primary: #660000;
+  --primary-hover: #8c1a1a;
+  --primary-pressed: #4d0000;
+  --sidebar: #660000;
+  --sidebar-text: #ffffff;
+  --sidebar-muted: #f0d7d7;
+  --sidebar-divider: #8c1a1a;
+  --ink: #2b1a1a;
+  --muted: #6e5a5a;
+  --surface: #ffffff;
+  --surface-deep: #f8f4f4;
+  --input: #fff9f2;
+  --border: #e4d8d8;
+  --background: #ffffff;
+  --header: #ffffff;
+  --danger: #b3261e;
+  --success: #2e7d32;
+  --warning: #b26a00;
+  --shadow: 0 10px 30px rgba(77, 0, 0, .08);
+  --shadow-soft: 0 3px 12px rgba(77, 0, 0, .06);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font: Poppins, 'Segoe UI', Arial, sans-serif;
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  --surface: #240d0d;
+  --surface-deep: #1a0808;
+  --input: #301212;
+  --border: #532020;
+  --background: #1a0808;
+  --header: #1a0808;
+  --ink: #ffffff;
+  --muted: #d9caca;
+  --danger: #ff8a80;
+  --success: #81c784;
+  --warning: #ffb74d;
+  --shadow: 0 12px 34px rgba(0, 0, 0, .38);
+  --shadow-soft: 0 3px 12px rgba(0, 0, 0, .3);
+  color-scheme: dark;
+}
